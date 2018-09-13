@@ -6,12 +6,12 @@
 
 (defn init []
   (js/firebase.initializeApp
-   #js {:apiKey "<API_KEY>"
-        :authDomain "<PROJECT_ID>.firebaseapp.com"
-        :databaseURL "https://<DATABASE_NAME>.firebaseio.com"
-        :projectId "<PROJECT_ID>FROM THE FIREBASE UI"
-        :storageBucket "<BUCKET>.appspot.com"
-        :messagingSenderId "<SENDER_ID>"}))
+   #js { :apiKey "AIzaSyDMU_888Ctmkz44fveC1j44cQuXXVsCmbU",
+         :authDomain "backgammon-b431c.firebaseapp.com",
+         :databaseURL "https://backgammon-b431c.firebaseio.com",
+         :projectId "backgammon-b431c",
+         :storageBucket "backgammon-b431c.appspot.com",
+         :messagingSenderId "1010344962139"}))
 
 (defn db-ref [path]
   (.ref (js/firebase.database) (string/join "/" path)))
